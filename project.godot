@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="MyMiniGames"
-config/description="Colección de minijuegos adictivos para Android, incluyendo IA y estrategia."
+config/description="Collection of addictive mini-games for Android, including AI and strategy."
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 

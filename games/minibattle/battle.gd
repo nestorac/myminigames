@@ -51,9 +51,9 @@ func _process(delta: float) -> void:
 func end_game() -> void:
 	game_over = true
 	if player_units_left > 0:
-		status_label.text = "¡Victoria!"
+		status_label.text = "Victory!"
 	else:
-		status_label.text = "Derrota"
+		status_label.text = "Defeat"
 	restart_button.visible = true
 
 func _on_restart() -> void:

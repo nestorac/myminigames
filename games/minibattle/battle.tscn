@@ -13,7 +13,7 @@ offset_top = 50.0
 offset_right = 520.0
 offset_bottom = 100.0
 theme_override_font_sizes/font_size = 28
-text = "Batalla en curso..."
+text = "Battle in progress..."
 horizontal_alignment = 1
 
 [node name="RestartButton" type="Button" parent="UI"]
@@ -21,7 +21,7 @@ offset_left = 260.0
 offset_top = 1100.0
 offset_right = 460.0
 offset_bottom = 1160.0
-text = "Reiniciar"
+text = "Restart"
 visible = false
 
 [node name="BackButton" type="Button" parent="UI"]
@@ -29,4 +29,4 @@ offset_left = 20.0
 offset_top = 20.0
 offset_right = 120.0
 offset_bottom = 60.0
-text = "Menú"
+text = "Menu"

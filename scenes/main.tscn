@@ -32,4 +32,4 @@ horizontal_alignment = 1
 [node name="BattleButton" type="Button" parent="VBox" unique_id=498966673]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
-text = "Mini Battle IA"
+text = "Mini Battle AI"

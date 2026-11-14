@@ -1,23 +1,23 @@
 # myminigames
 
-Colección de minijuegos adictivos para Android desarrollados con Godot 4.
+Collection of addictive mini-games for Android developed with Godot 4.
 
-Incluye elementos de IA, estrategia y otros géneros casuales de sesiones cortas.
+Includes AI elements, strategy, and other casual short-session genres.
 
-## Juegos actuales
+## Current games
 
-- **Mini Battle IA**: Batalla automática simple con unidades controladas por IA. Coloca tus unidades y observa cómo se enfrentan. Puntuación por victorias y supervivencia.
+- **Mini Battle AI**: Simple automatic battle with AI-controlled units. Place your units and watch them fight. Score based on victories and survival.
 
-## Estructura
+## Structure
 
-- `scenes/`: Menú principal y escenas compartidas
-- `games/minibattle/`: Primer minijuego con IA
-- Futuros juegos en carpetas separadas
+- `scenes/`: Main menu and shared scenes
+- `games/minibattle/`: First mini-game with AI
+- Future games in separate folders
 
-## Cómo ejecutar
+## How to run
 
-1. Abre el proyecto en Godot 4.3 o superior.
-2. Configura el exportador Android si quieres generar el APK.
-3. Ejecuta la escena principal.
+1. Open the project in Godot 4.3 or higher.
+2. Configure the Android exporter if you want to generate the APK.
+3. Run the main scene.
 
-Licencia: GPL-3.0
+License: GPL-3.0
