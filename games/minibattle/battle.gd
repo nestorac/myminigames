@@ -7,10 +7,12 @@ var game_over: bool = false
 
 @onready var status_label: Label = $UI/StatusLabel
 @onready var restart_button: Button = $UI/RestartButton
+@onready var back_button: Button = $UI/BackButton
 
 func _ready() -> void:
 	spawn_units()
 	restart_button.pressed.connect(_on_restart)
+	back_button.pressed.connect(_on_back)
 	restart_button.visible = false
 
 func spawn_units() -> void:
@@ -33,8 +35,8 @@ func spawn_units() -> void:
 	update_counts()
 
 func update_counts() -> void:
-	player_units_left = units.filter(func(u): return u.team == 0 and not u.is_dead).size()
-	ai_units_left = units.filter(func(u): return u.team == 1 and not u.is_dead).size()
+	player_units_left = units.filter(func(u): return is_instance_valid(u) and u.team == 0 and not u.is_dead).size()
+	ai_units_left = units.filter(func(u): return is_instance_valid(u) and u.team == 1 and not u.is_dead).size()
 
 func _process(delta: float) -> void:
 	if game_over:
@@ -56,3 +58,6 @@ func end_game() -> void:
 
 func _on_restart() -> void:
 	get_tree().reload_current_scene()
+
+func _on_back() -> void:
+	get_tree().change_scene_to_file("res://scenes/main.tscn")
